@@ -1,19 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kushangi Panchal - Data Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background: #3498db;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background: #1d6fa5;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #2c3e50;
+      color: white;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #3498db;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, I’m Kushangi Panchal</h1>
-  <p>Aspiring Data Analyst skilled in SQL, Python, Excel, Tableau, and Power BI.</p>
-  
-  <h2>Projects</h2>
-  <ul>
-    <li><b>Projects in PowerBI:</b> <a href="https://github.com/Kushangi2706/powerbi-projects.git">View on GitHub</a></li>
-    <li><b>Projects in Tableau:</b> <a href="https://github.com/Kushangi2706/tableau-projects.git">View on GitHub</a></li>
-  </ul>
-  
-  <h2>Contact</h2>
-  <p>Email: panchalkushangi1995@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/kushangi-panchal-23a646131/">Profile</a></p>
+  <header>
+    <h1>Kushangi Panchal</h1>
+    <p>Data Analyst | SQL | Python | Excel | Power BI | Tableau</p>
+  </header>
+
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Kushangi Panchal. I specialize in analyzing data, creating dashboards, and helping businesses make
+      data-driven decisions. Skilled in SQL, Python, Excel, Tableau, and Power BI.
+    </p>
+
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>📉 Projects in PowerBI:</h3>
+        <p>Built two projects in Power BI.</p>
+        <a href="https://github.com/Kushangi2706/powerbi-projects.git" target="_blank">View In GitHub</a>
+      </div>
+
+      <div class="card">
+        <h3>📉 Projects in Tableau:</h3>
+        <p>Created tableau project.</p>
+        <a href="https://github.com/Kushangi2706/tableau-projects.git" target="_blank">View In GitHub</a>
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <p>
+      📧 Email: <a href="mailto:panchalkushangi@gmail.com">panchalkushangi@gmail.com</a><br>
+      🔗 LinkedIn: <a href="https://www.linkedin.com/in/kushangi-panchal-23a646131" target="_blank">https://www.linkedin.com/in/kushangi-panchal-23a646131</a><br>
+      💻 GitHub: <a href="https://github.com/Kushangi2706" target="_blank">https://github.com/Kushangi2706</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>© Kushangi Panchal | Built with ❤️ using GitHub Pages</p>
+  </footer>
 </body>
 </html>
