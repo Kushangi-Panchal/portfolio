@@ -122,6 +122,89 @@
 .contact-card i {
   font-size: 1.4rem;
 }
+.about-text {
+  max-width: 900px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.about-text strong {
+  color: #008080; /* highlight skills or key points */
+}
+#experience {
+  max-width: 1100px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.experience-card h3 {
+  color: #008080;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+#experience {
+  max-width: 1100px;
+  margin: auto;
+  padding: 6rem 2rem;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.experience-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.experience-card h3 {
+  color: #008080;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  line-height: 1.6;
+}
 
     /* OTHER SECTIONS (auto height) */
     section{
@@ -150,6 +233,7 @@
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Work Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#dashboards">Dashboards</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -162,9 +246,52 @@
   </section>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>Professional Summary: Experienced Data Analyst with expertise in SQL, Python, Excel, Power BI, and Tableau. Passionate about turning data into insights that drive business success.</p>
-  </section>
+  <h2>About Me</h2>
+  <div class="about-text">
+    <p>I am a passionate <strong>Data Analyst</strong> with expertise in <strong>SQL, Python, Excel, Power BI, and Tableau</strong>. I enjoy transforming raw data into meaningful insights that help organizations make informed decisions.</p>
+    <p>Over the years, I have worked on projects across <strong>healthcare, e-commerce, and technology</strong>, creating dashboards and reports that drive business growth.</p>
+    <p>My strengths include <strong>data cleaning, analysis, visualization, and storytelling with data</strong>. I am always eager to learn new tools and techniques to solve complex problems and communicate findings effectively to stakeholders.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="experience-container">
+
+    <!-- Data Analyst at EM Technologies -->
+    <div class="experience-card">
+      <h3>Data Analyst</h3>
+      <p><strong>Company:</strong> EM Technologies</p>
+      <p><strong>Duration:</strong> Jan 2022 – April 2024</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+        <li>Collected, cleaned, and analyzed data from multiple sources to support business decisions.</li>
+        <li>Created interactive dashboards and reports in Power BI and Excel for management insights.</li>
+        <li>Identified trends, patterns, and key performance indicators (KPIs) to optimize operational performance.</li>
+        <li>Generated actionable insights from data and presented findings to stakeholders.</li>
+        <li>Collaborated with cross-functional teams to improve reporting processes and automate repetitive tasks.</li>
+        <li>Monitored data quality and ensured accuracy and consistency across reports.</li>
+      </ul>
+    </div>
+
+    <!-- Junior Data Analyst at Ennovatics India -->
+    <div class="experience-card">
+      <h3>Junior Data Analyst</h3>
+      <p><strong>Company:</strong> Ennovatics India</p>
+      <p><strong>Duration:</strong> Sep 2018 – Oct 2021</p>
+      <p><strong>Responsibilities:</strong></p>
+      <ul>
+        <li>Assisted in collecting, cleaning, and organizing data from multiple sources for analysis.</li>
+        <li>Supported creation of dashboards and reports in Excel and Power BI to track key metrics.</li>
+        <li>Conducted basic data analysis to identify trends, patterns, and operational insights.</li>
+        <li>Prepared reports and visualizations for internal teams to support decision-making.</li>
+        <li>Collaborated with senior analysts to optimize data processes and automate repetitive tasks.</li>
+        <li>Ensured timely delivery of data reports and maintained documentation for analysis workflows.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
 
   <section id="projects" class="projects">
     <h2>Projects</h2>
@@ -227,7 +354,7 @@
       <span>Download Resume</span>
     </a>
     
-    <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="contact-card">
+    <a href="https://www.linkedin.com/in/kushangi-panchal-23a646131/" target="_blank" class="contact-card">
       <i class="fab fa-linkedin"></i>
       <span>View LinkedIn</span>
     </a>
