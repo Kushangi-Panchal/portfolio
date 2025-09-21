@@ -205,6 +205,54 @@
   list-style-type: disc;
   line-height: 1.6;
 }
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    display: none; /* hidden initially */
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  nav ul.show {
+    display: flex; /* show when toggle clicked */
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0.5rem 0;
+  }
+}
+
+
 
     /* OTHER SECTIONS (auto height) */
     section{
@@ -229,16 +277,17 @@
 <body>
 
   <nav>
-    <div class="logo">Kushangi Panchal</div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Work Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#dashboards">Dashboards</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="logo">Kushangi Panchal</div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- hamburger icon -->
+  <ul id="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Work Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#dashboards">Dashboards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <section class="hero" id="hero">
     <h1>Hi, I'm Kushangi Panchal</h1>
@@ -375,6 +424,28 @@
     },{threshold:0.2});
     sections.forEach(sec=>observer.observe(sec));
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  const navItems = navLinks.querySelectorAll('a');
+
+  // Toggle hamburger menu
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+
+  // Close menu when a link is clicked
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      }
+    });
+  });
+});
+</script>
+
 
 </body>
 </html>
